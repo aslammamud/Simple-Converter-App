@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.aslam.converter">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/converter"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/converter"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Temperature"></activity>
+        <activity android:name=".Weight" />
+        <activity android:name=".Currency" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
